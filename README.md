@@ -40,10 +40,14 @@
     — [Berkeley, 2016-08-03](https://www.meetup.com/ACCU-Bay-Area/events/232526729/)
 * Bryce Adelstein Lelbach: C++17 Features
     — [Mountain View, 2016-07-13](https://www.meetup.com/ACCU-Bay-Area/events/231144075/)
+* Michael Klose: Transforming legacy multithreaded code into modern C++
+    — [San Francisco, 2016-07-11](https://www.meetup.com/SF-Bay-Area-Cpp/events/232112281/)
 * [Lisa Lippincott: What is the basic interface?](2016-07-06/slides.pdf)
     — [Berkeley, 2016-07-06](http://www.meetup.com/ACCU-Bay-Area/events/231781602/)
 * Richard Powell: C++ Talent Evaluation
     — [Mountain View, 2016-06-22](https://www.meetup.com/ACCU-Bay-Area/events/228382462/)
+* Jackie Kay: Modern C++ for Bare Metal Embedded Systems
+    — [San Francisco, 2016-06-20](https://www.meetup.com/SF-Bay-Area-Cpp/events/231710659/)
 * [John McFarlane: Fixed-Point Arithmetic](2016-06-08/slides.pdf)
     — [Mountain View, 2016-06-08](http://www.meetup.com/ACCU-Bay-Area/events/230683461/)
 * [Arthur O'Dwyer: Template Normal Programming](2016-05-11/slides.pdf)
@@ -54,21 +58,128 @@
     — [San Francisco, 2016-04-18](https://www.meetup.com/ACCU-Bay-Area/events/229988489/)
 * [Barbara Geller and Ansel Sermersheim: Introducing a new C++ Signal Library](2016-04-13/slides.pdf)
     — [Mountain View, 2016-04-13](https://www.meetup.com/ACCU-Bay-Area/events/229237525/)
+* Jeff Trull: Preprocessor-Aware Automated Refactoring
+    — [San Francisco, 2016-04-11](https://www.meetup.com/SF-Bay-Area-Cpp/events/229431210/)
+* [Michael Park: decltype (lightning talk)](2016-04-11/slides-michael.pdf)
+    — [San Francisco, 2016-04-11](https://www.meetup.com/SF-Bay-Area-Cpp/events/229431210/)
 * Bryce Adelstein Lelbach: The State of the Standard
     — [Mountain View, 2016-03-23](https://www.meetup.com/ACCU-Bay-Area/events/228382442/)
 * Dmitri Nesteruk: A Look at CLion
     — [Mountain View, 2016-03-16](https://www.meetup.com/ACCU-Bay-Area/events/227325920/)
+* Dmitri Nesteruk: Design Patterns in the 21st Century
+    — [San Francisco, 2016-03-15](https://www.meetup.com/SF-Bay-Area-Cpp/events/228070137/)
 * Jon Kalb: The Beast is Back
     — [San Francisco, 2016-02-16](https://www.meetup.com/SF-Bay-Area-Cpp/events/228439548/)
 * Norman Hardy: Reliability and Security of Today's Software Platforms
     — [Mountain View, 2016-02-10](https://www.meetup.com/ACCU-Bay-Area/events/227325917/)
 * Sumant Tambe: More fun with coroutines
     — [Mountain View, 2016-01-27](https://www.meetup.com/ACCU-Bay-Area/events/221331771/)
+* Arthur O'Dwyer: Template Regular Programming
+    — [San Francisco, 2016-01-19](https://www.meetup.com/SF-Bay-Area-Cpp/events/227931982/)
 * Sumant Tambe: Playing with C++ Coroutines
     — [Mountain View, 2016-01-13](https://www.meetup.com/ACCU-Bay-Area/events/225772179/)
 * [Bjarne Stroustrup: No Littering!](2016-01-12/slides.pdf)
     — [Mountain View, 2016-01-12](https://www.meetup.com/ACCU-Bay-Area/events/227941529/)
+* [Dustin Chase: Operator overloading (lightning talk)](2015-12-14/slides-dustin.pdf)
+    — [San Francisco, 2015-12-14](https://www.meetup.com/SF-Bay-Area-Cpp/events/226669747/)
+* Ragi Burhum: Cross-platform C++ development (lightning talk)
+    — [San Francisco, 2015-12-14](https://www.meetup.com/SF-Bay-Area-Cpp/events/226669747/)
+* Jared Grubb: The Itanium name-mangling scheme (lightning talk)
+    — [San Francisco, 2015-12-14](https://www.meetup.com/SF-Bay-Area-Cpp/events/226669747/)
 * Michael Caisse: Template Meta Programming in C++14
     — [Mountain View, 2015-12-09](https://www.meetup.com/ACCU-Bay-Area/events/225772176/)
+* Chandler Carruth: Benchmarks and CPUs and Compilers! Oh My!
+    — [San Francisco, 2015-11-19](https://www.meetup.com/SF-Bay-Area-Cpp/events/226662648/)
+* [Ali Çehreli: Self-Publishing a Technical Book](2015-11-11/slides.pdf)
+    — [Mountain View, 2015-11-11](https://www.meetup.com/ACCU-Bay-Area/events/225125586/)
+* Jon Kalb: The Beast is Back
+    — [Mountain View, 2015-10-14](https://www.meetup.com/ACCU-Bay-Area/events/224256609/)
+* Mike Spertus: Memory Management in C++14 and Beyond
+    — [San Francisco, 2015-09-15](https://www.meetup.com/SF-Bay-Area-Cpp/events/225018501/)
+* [Piotr Padlewski: C++11 Optimizations](2015-09-09/slides.pdf)
+    — [Mountain View, 2015-09-09](https://www.meetup.com/ACCU-Bay-Area/events/222662609/)
+* Jeff Trull: Efficient Sequences from Streams (lightning talk)
+    — [San Francisco, 2015-08-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/224548018/)
+* Jacob Potter: nn<>, a non-nullable pointer wrapper (lightning talk)
+    — [San Francisco, 2015-08-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/224548018/)
+* Arthur O'Dwyer: Analog Literals (lightning talk)
+    — [San Francisco, 2015-08-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/224548018/)
+* Richard Powell: The Importance of Being const
+    — [Mountain View, 2015-08-12](https://www.meetup.com/ACCU-Bay-Area/events/223885380/)
+* Bryce Adelstein Lelbach: HPX, a C++ parallel programming framework
+    — [Mountain View, 2015-07-08](https://www.meetup.com/ACCU-Bay-Area/events/221768926/)
+* Chandler Carruth: Easier, Faster, Safer
+    — [San Francisco, 2015-06-29](https://www.meetup.com/SF-Bay-Area-Cpp/events/223500446/)
+* Ivan Godard: The Mill CPU Toolchain
+    — [Mountain View, 2015-06-10](https://www.meetup.com/ACCU-Bay-Area/events/218992453/)
+* Arthur O'Dwyer: Modern C++ Boilerplate
+    — [San Francisco, 2015-05-18](https://www.meetup.com/SF-Bay-Area-Cpp/events/222524277/)
+* [Ali Çehreli: Multitasking in D](2015-05-13/slides.pdf)
+    — [Mountain View, 2015-05-13](https://www.meetup.com/ACCU-Bay-Area/events/218992449/)
+* [Sean Parent: Better Code/Concurrency](2015-04-21/slides.pdf)
+    — [San Francisco, 2015-04-21](https://www.meetup.com/SF-Bay-Area-Cpp/events/221680178/)
+* [Arthur O'Dwyer: Generic Lambdas from Scratch (again)](2015-04-08/slides.pdf)
+    — [Mountain View, 2015-04-08](https://www.meetup.com/ACCU-Bay-Area/events/218992447/)
+* [Arthur O'Dwyer: Generic Lambdas from Scratch](2015-03-24/slides.pdf)
+    — [San Francisco, 2015-03-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/221265073/)
+* [Max Neunhöffer: Experience with C++11 in ArangoDB](2015-03-11/slides.pdf)
+    — [Mountain View, 2015-03-11](https://www.meetup.com/ACCU-Bay-Area/events/218992440/)
+* Sumant Tambe: Fun with Lambdas
+    — [San Francisco, 2015-02-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/220234323/)
+* [Barbara Geller and Ansel Sermersheim: An implementation of reflection in C++](2015-02-11/slides.pdf)
+    — [Mountain View, 2015-02-11](https://www.meetup.com/ACCU-Bay-Area/events/218656595/)
+* [Arthur O'Dwyer: The Rule of Seven, Plus or Minus Two (lightning talk)](2015-01-28/slides-arthur.pdf)
+    — [Mountain View, 2015-01-28](https://www.meetup.com/ACCU-Bay-Area/events/219229911/)
+* [Barbara Geller and Ansel Sermersheim: Doxygen to DoxyPress (lightning talk)](2015-01-28/slides-barbara.pdf)
+    — [Mountain View, 2015-01-28](https://www.meetup.com/ACCU-Bay-Area/events/219229911/)
+* Jon Kalb: Rvalue References, Move Semantics, and Perfect Forwarding
+    — [San Francisco, 2015-01-21](https://www.meetup.com/SF-Bay-Area-Cpp/events/219805577/)
+* [Sean Parent: Better Code/Concurrency](2015-01-14/slides.pdf)
+    — [Mountain View, 2015-01-14](https://www.meetup.com/ACCU-Bay-Area/events/217834432/)
+* [Hans Wennborg: Clang/LLVM on Windows](2014-12-10/slides.pdf)
+    — [Mountain View, 2014-12-10](https://www.meetup.com/ACCU-Bay-Area/events/194137632/)
+* [Arthur O'Dwyer: C++11's New Pointer Types](2014-12-09/slides.pdf)
+    — [San Francisco, 2014-12-09](https://www.meetup.com/SF-Bay-Area-Cpp/events/218833493/)
+* Michael Patrick Ellard: Swift for C, Objective-C and C++ Developers
+    — [Mountain View, 2014-11-12](https://www.meetup.com/ACCU-Bay-Area/events/194137622/)
+* Greg Law: Real world reversible debugging for C/C++ developers on Linux
+    — [Mountain View, 2014-10-08](https://www.meetup.com/ACCU-Bay-Area/events/194137582/)
+* Matt Hargett: Common sense acceleration of your MLOC build
+    — [Mountain View, 2014-08-13](https://www.meetup.com/ACCU-Bay-Area/events/200238612/)
+* [Arthur O'Dwyer: make_iterable (lightning talk)](2014-07-23/slides.pdf)
+    — [Mountain View, 2014-07-23](https://www.meetup.com/ACCU-Bay-Area/events/187628612/)
+* Barbara Geller and Ansel Sermersheim: reflection in C++11 (lightning talk)
+    — [Mountain View, 2014-07-23](https://www.meetup.com/ACCU-Bay-Area/events/187628612/)
+* Nathan Yospe: Unit-testing Concurrent C++ (lightning talk)
+    — [Mountain View, 2014-06-25](https://www.meetup.com/ACCU-Bay-Area/events/187628542/)
+* [Arthur O'Dwyer: The Auto() macro (lightning talk)](2014-06-25/slides-arthur.pdf)
+    — [Mountain View, 2014-06-25](https://www.meetup.com/ACCU-Bay-Area/events/187628542/)
+* Alex Martelli: "Good Enough" is Good Enough!
+    — [Mountain View, 2014-06-11](https://www.meetup.com/ACCU-Bay-Area/events/184685262/)
+* Ivan Godard: Processor configuration on the Mill CPU
+    — [Mountain View, 2014-05-14](https://www.meetup.com/ACCU-Bay-Area/events/176504832/)
+* Thierry Seegers: an event channel framework using lambda functions (lightning talk)
+    — [Mountain View, 2014-04-23](https://www.meetup.com/ACCU-Bay-Area/events/168265232/)
+* Sumant Tambe: Fun with Lambdas C++14 Style, Part 2
+    — [Mountain View, 2014-04-09](https://www.meetup.com/ACCU-Bay-Area/events/168265102/)
+* [Arthur O'Dwyer: efficient implementation of std::spaceship (lightning talk)](2014-03-26/slides-arthur.pdf)
+    — [Mountain View, 2014-03-26](https://www.meetup.com/ACCU-Bay-Area/events/157777022/)
+* Dane Van Dyck: lock-free buffer exchange (lightning talk)
+    — [Mountain View, 2014-03-26](https://www.meetup.com/ACCU-Bay-Area/events/157777022/)
+* Patrick LoPresti: Church numerals in C++14 (lightning talk)
+    — [Mountain View, 2014-03-26](https://www.meetup.com/ACCU-Bay-Area/events/157777022/)
+* Jared Grubb: correct handling of lvalues and rvalues in wrapper types (lightning talk)
+    — [Mountain View, 2014-03-26](https://www.meetup.com/ACCU-Bay-Area/events/157777022/)
+* Sumant Tambe: Fun with Lambdas C++14 Style
+    — [Mountain View, 2014-03-12](https://www.meetup.com/ACCU-Bay-Area/events/164173502/)
+* Jon Kalb: SCARY iterators (lightning talk)
+    — [Mountain View, 2014-02-26](https://www.meetup.com/ACCU-Bay-Area/events/162950162/)
+* Amaury Séchet: Multi-core Software Development Challenges and How D Helps
+    — [Mountain View, 2014-02-12](https://www.meetup.com/ACCU-Bay-Area/events/159565312/)
+* Thierry Seegers: The C++14 Relaxed Constexpr, or There and Back Again (lightning talk)
+    — [Mountain View, 2014-01-22](https://www.meetup.com/ACCU-Bay-Area/events/157327812/)
+* John Reiser: Adventures in Program Profiling
+    — [Mountain View, 2014-01-08](https://www.meetup.com/ACCU-Bay-Area/events/154425672/)
+
 
 **[Presenters: see our guidelines for making a good slide deck](SLIDE_DECK_GUIDELINES.md)**
