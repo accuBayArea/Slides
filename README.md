@@ -6,7 +6,7 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
-* [Arthur O'Dwyer — std::optional<T> From Scratch](slides/2017-02-15.pdf)
+* [Arthur O'Dwyer — std::optional\<T> From Scratch](slides/2017-02-15.pdf)
     — [San Francisco, 2017-02-15](https://www.meetup.com/ACCU-Bay-Area/events/237004920/)
 * Robin Williams — Efficient and accessible? Addressing new architectures in C++
     — [Mountain View, 2017-02-08](https://www.meetup.com/ACCU-Bay-Area/events/236709335/)
@@ -106,7 +106,7 @@ Hyperlinked titles point to PDF slide decks hosted within this git repository.
     — [Mountain View, 2015-09-09](https://www.meetup.com/ACCU-Bay-Area/events/222662609/)
 * Jeff Trull — Efficient Sequences from Streams (lightning talk)
     — [San Francisco, 2015-08-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/224548018/)
-* Jacob Potter — nn<>, a non-nullable pointer wrapper (lightning talk)
+* Jacob Potter — nn\<>, a non-nullable pointer wrapper (lightning talk)
     — [San Francisco, 2015-08-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/224548018/)
 * Arthur O'Dwyer — Analog Literals (lightning talk)
     — [San Francisco, 2015-08-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/224548018/)
@@ -124,7 +124,7 @@ Hyperlinked titles point to PDF slide decks hosted within this git repository.
     — [Mountain View, 2015-05-13](https://www.meetup.com/ACCU-Bay-Area/events/218992449/)
 * [Sean Parent — Better Code: Concurrency](slides/2015-04-21.pdf)
     — [San Francisco, 2015-04-21](https://www.meetup.com/SF-Bay-Area-Cpp/events/221680178/)
-* [Arthur O'Dwyer — Generic Lambdas from Scratch (again)](slides/2015-04-08.pdf)
+* [Arthur O'Dwyer — Generic Lambdas from Scratch](slides/2015-04-08.pdf)
     — [Mountain View, 2015-04-08](https://www.meetup.com/ACCU-Bay-Area/events/218992447/)
 * [Arthur O'Dwyer — Generic Lambdas from Scratch](slides/2015-03-24.pdf)
     — [San Francisco, 2015-03-24](https://www.meetup.com/SF-Bay-Area-Cpp/events/221265073/)
