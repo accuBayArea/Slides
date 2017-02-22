@@ -1,5 +1,11 @@
 # ACCU Bay Area Meetup Slides
 
+This is a complete list of the topics and speakers for our meetup's formal
+presentation series since 2013. Also included are selected lightning talks
+from our informal "workshop and discussion group" sessions.
+
+Hyperlinked titles point to PDF slide decks hosted within this git repository.
+
 * [Arthur O'Dwyer: std::optional<T> From Scratch](2017-02-15/slides.pdf)
     — [San Francisco, 2017-02-15](https://www.meetup.com/ACCU-Bay-Area/events/237004920/)
 * Robin Williams: Addressing new architectures in C++
@@ -180,6 +186,33 @@
     — [Mountain View, 2014-01-22](https://www.meetup.com/ACCU-Bay-Area/events/157327812/)
 * John Reiser: Adventures in Program Profiling
     — [Mountain View, 2014-01-08](https://www.meetup.com/ACCU-Bay-Area/events/154425672/)
-
+* Ivan Godard: Metadata in the Mill CPU
+    — [Mountain View, 2013-12-11](https://www.meetup.com/ACCU-Bay-Area/events/147733012/)
+* Arthur O'Dwyer: UTF-8 to Latin-1 at compile time (lightning talk)
+    — [Mountain View, 2013-11-20](https://www.meetup.com/ACCU-Bay-Area/events/146762392/)
+* Michael Caisse: Parsing JSON in C++ with a DSEL
+    — [Mountain View, 2013-11-13](https://www.meetup.com/ACCU-Bay-Area/events/146761302/)
+* Jon Kalb: Fun with Tuples in C++11
+    — [Mountain View, 2013-10-09](https://www.meetup.com/ACCU-Bay-Area/events/143671932/)
+* [Sean Parent: C++ Seasoning](2013-09-11/slides.pdf)
+    — [Mountain View, 2013-09-11](https://www.meetup.com/ACCU-Bay-Area/events/136194282/)
+* Jon Kalb: C++14
+    — [Mountain View, 2013-08-14](https://www.meetup.com/ACCU-Bay-Area/events/130676132/)
+* Clayton Weimer: Continuous Code Inspection with MISRA-C:2012
+    — [Mountain View, 2013-07-10](https://www.meetup.com/ACCU-Bay-Area/events/124132622/)
+* Jeff Johnson and Austin Henderson: Conceptual Models
+    — [Mountain View, 2013-06-12](https://www.meetup.com/ACCU-Bay-Area/events/116155172/)
+* Ben Gertzfield: Writing Testable Code in D
+    — [Mountain View, 2013-05-08](https://www.meetup.com/ACCU-Bay-Area/events/116154392/)
+* Manu Evans: Using D Alongside a Game Engine
+    — [Mountain View, 2013-04-30](https://www.meetup.com/ACCU-Bay-Area/events/115855342/)
+* [Matt Hargett: Pragmatic Unit Testing in C++](2013-04-10/slides.pdf)
+    — [Mountain View, 2013-04-10](https://www.meetup.com/ACCU-Bay-Area/events/113015592/)
+* Sumant Tambe: Standardizing the Data Distribution Service API for Modern C++
+    — [Mountain View, 2013-03-13](https://www.meetup.com/ACCU-Bay-Area/events/98330512/)
+* Jon Kalb: Exception-Safe Coding, Part II
+    — [Mountain View, 2013-02-13](https://www.meetup.com/ACCU-Bay-Area/events/98307612/)
+* Jon Kalb: Exception-Safe Coding, Part I
+    — [Mountain View, 2013-01-09](https://www.meetup.com/ACCU-Bay-Area/events/96780602/)
 
 **[Presenters: see our guidelines for making a good slide deck](SLIDE_DECK_GUIDELINES.md)**
