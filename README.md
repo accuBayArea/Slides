@@ -52,5 +52,23 @@
     — [Berkeley, 2016-04-20](https://www.meetup.com/ACCU-Bay-Area/events/230276490/)
 * [Avi Kivity: Seastar, a C++14 Framework for High-Concurrency, High-Throughput Servers](2016-04-18/slides.pdf)
     — [San Francisco, 2016-04-18](https://www.meetup.com/ACCU-Bay-Area/events/229988489/)
+* [Barbara Geller and Ansel Sermersheim: Introducing a new C++ Signal Library](2016-04-13/slides.pdf)
+    — [Mountain View, 2016-04-13](https://www.meetup.com/ACCU-Bay-Area/events/229237525/)
+* Bryce Adelstein Lelbach: The State of the Standard
+    — [Mountain View, 2016-03-23](https://www.meetup.com/ACCU-Bay-Area/events/228382442/)
+* Dmitri Nesteruk: A Look at CLion
+    — [Mountain View, 2016-03-16](https://www.meetup.com/ACCU-Bay-Area/events/227325920/)
+* Jon Kalb: The Beast is Back
+    — [San Francisco, 2016-02-16](https://www.meetup.com/SF-Bay-Area-Cpp/events/228439548/)
+* Norman Hardy: Reliability and Security of Today's Software Platforms
+    — [Mountain View, 2016-02-10](https://www.meetup.com/ACCU-Bay-Area/events/227325917/)
+* Sumant Tambe: More fun with coroutines
+    — [Mountain View, 2016-01-27](https://www.meetup.com/ACCU-Bay-Area/events/221331771/)
+* Sumant Tambe: Playing with C++ Coroutines
+    — [Mountain View, 2016-01-13](https://www.meetup.com/ACCU-Bay-Area/events/225772179/)
+* [Bjarne Stroustrup: No Littering!](2016-01-12/slides.pdf)
+    — [Mountain View, 2016-01-12](https://www.meetup.com/ACCU-Bay-Area/events/227941529/)
+* Michael Caisse: Template Meta Programming in C++14
+    — [Mountain View, 2015-12-09](https://www.meetup.com/ACCU-Bay-Area/events/225772176/)
 
 **[Presenters: see our guidelines for making a good slide deck](SLIDE_DECK_GUIDELINES.md)**
