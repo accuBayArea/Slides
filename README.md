@@ -6,6 +6,12 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Louis Dionne — Metaprogramming in C++14 and Beyond](slides/2017-03-08.pdf)
+    — [Mountain View, 2017-03-08](https://www.meetup.com/ACCU-Bay-Area/events/237092391/)
+* [Arthur O'Dwyer — boost::future and such (lightning talk)](slides/2017-03-01.pdf)
+    — [Berkeley, 2017-03-01](https://www.meetup.com/ACCU-Bay-Area/events/237353826/)
+* Hartmut Kaiser — Parallelism with HPX in Modern C++
+    — [Palo Alto, 2017-02-22](https://www.meetup.com/ACCU-Bay-Area/events/237895143/)
 * [Arthur O'Dwyer — std::optional\<T> From Scratch](slides/2017-02-15.pdf)
     — [San Francisco, 2017-02-15](https://www.meetup.com/ACCU-Bay-Area/events/237004920/)
 * Robin Williams — Efficient and accessible? Addressing new architectures in C++
