@@ -6,6 +6,8 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Bryce Adelstein Lelbach — News from the Kona Committee Meeting
+    — [San Francisco, 2017-03-15](https://www.meetup.com/ACCU-Bay-Area/events/238108195/)
 * [Louis Dionne — Metaprogramming in C++14 and Beyond](slides/2017-03-08.pdf)
     — [Mountain View, 2017-03-08](https://www.meetup.com/ACCU-Bay-Area/events/237092391/)
 * [Arthur O'Dwyer — boost::future and such (lightning talk)](slides/2017-03-01.pdf)
@@ -16,7 +18,7 @@ Hyperlinked titles point to PDF slide decks hosted within this git repository.
     — [San Francisco, 2017-02-15](https://www.meetup.com/ACCU-Bay-Area/events/237004920/)
 * Robin Williams — Efficient and accessible? Addressing new architectures in C++
     — [Mountain View, 2017-02-08](https://www.meetup.com/ACCU-Bay-Area/events/236709335/)
-* Sean Parent — Better Code
+* [Sean Parent — Better Code](slides/2017-01-25.pdf)
     — [Palo Alto, 2017-01-25](https://www.meetup.com/ACCU-Bay-Area/events/234365838/)
 * Bryce Adelstein Lelbach — The C++17 Parallel Algorithms
     — [Mountain View, 2017-01-11](https://www.meetup.com/ACCU-Bay-Area/events/236621722/)
