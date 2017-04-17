@@ -6,6 +6,12 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Arthur O'Dwyer — Classical Polymorphism and Generic Programming](slides/2017-04-19.pdf)
+    — [San Francisco, 2017-04-19](https://www.meetup.com/ACCU-Bay-Area/events/238734828/)
+* Michael Klose — Dealing with Data in C++
+    — [Mountain View, 2017-04-12](https://www.meetup.com/ACCU-Bay-Area/events/237092398/)
+* [Jon Kalb — Modern Template Techniques](slides/2017-04-05.pdf)
+    — [Berkeley, 2017-04-05](https://www.meetup.com/ACCU-Bay-Area/events/236541505/)
 * Bryce Adelstein Lelbach — News from the Kona Committee Meeting
     — [San Francisco, 2017-03-15](https://www.meetup.com/ACCU-Bay-Area/events/238108195/)
 * [Louis Dionne — Metaprogramming in C++14 and Beyond](slides/2017-03-08.pdf)
