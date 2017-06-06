@@ -6,6 +6,10 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Kostya Serebryany — Fuzzing, the Next Unit Testing](slides/2017-05-10.pdf)
+    — [Mountain View, 2017-05-10](https://www.meetup.com/ACCU-Bay-Area/events/237092408/)
+* [Edouard Alligand — Generating Protocol Tests at Compile Time](slides/2017-05-03.pdf)
+    — [Berkeley, 2017-05-03](https://www.meetup.com/ACCU-Bay-Area/events/238849762/)
 * [Titus Winters — The Role of Testing in Software Engineering, 2010–2030](slides/2017-04-26.pdf)
     — [Palo Alto, 2017-04-26](https://www.meetup.com/ACCU-Bay-Area/events/238035767/)
 * [Arthur O'Dwyer — Classical Polymorphism and Generic Programming](slides/2017-04-19.pdf)
