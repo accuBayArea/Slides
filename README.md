@@ -6,6 +6,12 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [John McFarlane — Arithmetic Types are > the + of Their Parts](slides/2017-06-22.pdf)
+    — [San Francisco, 2017-06-22](https://www.meetup.com/ACCU-Bay-Area/events/240279409/)
+* [John Bandela — Macro-free Stackless Coroutines in C++14](slides/2017-06-14.pdf)
+    — [Mountain View, 2017-06-14](https://www.meetup.com/ACCU-Bay-Area/events/237474473/)
+* [Barbara Geller and Ansel Sermersheim — A New Unicode-Aware String Class](slides/2017-06-07.pdf)
+    — [Berkeley, 2017-06-07](https://www.meetup.com/ACCU-Bay-Area/events/239048854/)
 * [Kostya Serebryany — Fuzzing, the Next Unit Testing](slides/2017-05-10.pdf)
     — [Mountain View, 2017-05-10](https://www.meetup.com/ACCU-Bay-Area/events/237092408/)
 * [Edouard Alligand — Generating Protocol Tests at Compile Time](slides/2017-05-03.pdf)
