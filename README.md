@@ -6,6 +6,12 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Jeff Johnson — Designing User Interfaces for an Aging Population](slides/2017-07-19.pdf)
+    — [San Francisco, 2017-07-19](https://www.meetup.com/ACCU-Bay-Area/events/241159991/)
+* Ivan Godard — Switches: A Mill Story
+    — [San Francisco, 2017-07-12](https://www.meetup.com/ACCU-Bay-Area/events/240691633/)
+* [Tim Shull — Understanding C++ using the AST and the Object Model](slides/2017-07-05.pdf)
+    — [Berkeley, 2017-07-05](https://www.meetup.com/ACCU-Bay-Area/events/239463648/)
 * [John McFarlane — Arithmetic Types are > the + of Their Parts](slides/2017-06-22.pdf)
     — [San Francisco, 2017-06-22](https://www.meetup.com/ACCU-Bay-Area/events/240279409/)
 * [John Bandela — Macro-free Stackless Coroutines in C++14](slides/2017-06-14.pdf)
