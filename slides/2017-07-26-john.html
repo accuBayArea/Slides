@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  <style>
+      #frame {
+          width: 1050px;
+          height: 633px;
+          border: 1px solid black;
+      }
+
+      #frame {
+          -ms-zoom: 0.72;
+          -moz-transform: scale(0.72);
+          -moz-transform-origin: 0 0;
+          -o-transform: scale(0.72);
+          -o-transform-origin: 0 0;
+          -webkit-transform: scale(0.72);
+          -webkit-transform-origin: 0 0;
+      }
+  </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center
+
+John McFarlane, A9.com
+
+# Signed Integers: 
+
+--
+
+# Come for the Correctness,
+
+--
+
+# stay for the speed-ups!
+
+---
+
+# Background
+
+* [`unsigned`: A Guideline for Better Code](https://www.youtube.com/watch?v=wvtFGa6XJDU) (Jon Kalb, CppCon 2016)
+
+* [Garbage In, Garbage Out: Arguing about Undefined Behavior...](https://www.youtube.com/watch?v=yG1OZ69H_-o&t=2542s) (Chandler Carruth, CppCon 2016)
+
+* [Random thoughts on programming languages, compilers, operating systems, etc.](https://kristerw.blogspot.com/2016/02/how-undefined-signed-overflow-enables.html)
+(Krister Walfridsson’s blog, 2016-02-21)
+
+---
+
+### kristerw.blogspot.com/2016/02/how-undefined-signed-overflow-enables.html
+
+<iframe id="frame" src="https://kristerw.blogspot.com/2016/02/how-undefined-signed-overflow-enables.html" />
+
+---
+
+### Example 1: Eliminate multiplication in comparison with 0 
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example1(T+x)+%7B%0A++T+c+%3D+5%3B%0A++return+(x+*+c)+%3E+0%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:36.53295128939828,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:63.467048710601716,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 2: Eliminate division after multiplication
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'T+example2(T+x)+%7B%0A++return+(x+*+14)+/+7%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:29.083094555873924,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:70.91690544412607,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 3: Eliminate negation 
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'T+example3(T+x,+T+y)+%7B%0A++++return+(-x)+/+(-y)%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:29.083094555873924,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:70.91690544412607,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 4a/b: Simplify comparisons that are always true or false
+
+<iframe width="750px" height="475px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example4a(T+x)+%7B%0A%09T+c+%3D+1%3B%0A%09return+x+%2B+c+%3C+x%3B%0A%7D%0A%0Abool+example4b(T+x)+%7B%0A%09T+c+%3D+1%3B%0A%09return+x+%2B+c+%3C%3D+x%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:45.12893982808023,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:54.87106017191977,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 4c/d: Simplify comparisons that are always true or false
+
+<iframe width="750px" height="475px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example4c(T+x)+%7B%0A%09T+c+%3D+1%3B%0A%09return+x+%2B+c+%3E+x%3B%0A%7D%0A%0Abool+example4d(T+x)+%7B%0A%09T+c+%3D+1%3B%0A%09return+x+%2B+c+%3E%3D+x%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:45.12893982808023,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:54.87106017191977,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 5: Eliminate negation in comparisons
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example5(T+x,+T+y)+%7B%0A++return+(-x)+%3D%3D+(-y)%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:36.53295128939828,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:63.467048710601716,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 6a: Reduce magnitude of constants
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example6a(T+x,+T+y)+%7B%0A++T+c+%3D+5%3B%0A++return+x+%2B+c+%3E+y%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:36.96275071633238,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:63.03724928366763,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+        
+### Example 6b: Reduce magnitude of constants
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example6b(T+x,+T+y)+%7B%0A++T+c+%3D+7%3B%0A++return+x+%2B+c+%3C%3D+y%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:36.96275071633238,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:63.03724928366763,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 7a: Eliminate constants in comparisons
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example7a(T+x,+T+y)+%7B%0A++T+c1+%3D+17,+c2+%3D+23%3B%0A++return+(x+%2B+c1)+%3C+c2%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:36.96275071633238,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:63.03724928366763,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+        
+### Example 7b: Eliminate constants in comparisons
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example7b(T+x,+T+y)+%7B%0A++return+(x+%2B+1)+%3C+(y+%2B+2)%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:45.12893982808023,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:54.87106017191977,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 8: Pointer arithmetic and type promotion
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example8(float+*+a,+T+i)+%7B%0A++float+*+e0+%3D+a%2Bi%3B%0A++float+*+e1+%3D+a%2B(i%2B1)%3B%0A++return+e1+-+e0+%3D%3D+1%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:33.5243553008596,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:66.4756446991404,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 9a: Value range calculations
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'T+example9a(T+x)+%7B%0A++++if+(x+%3E+0)+%7B%0A+%09%09T+y+%3D+x+%2B+5%3B%0A++++++%09T+z+%3D+y+/+4%3B%0A++%09%09return+z%3B%0A++++%7D%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:42.693409742120345,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:57.306590257879655,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+???
+In this example, unsigned division should outperform signed division.
+But if the compiler can determine that the signed value is positive, it *does* act on that information.
+As I'm sure you can imagine, that includes a *lot* of loop counters.
+
+---
+
+### Example 9b: Changing comparisons to true or false if the ranges for x and y does not overlap
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'bool+example9b(T+x)+%7B%0A++if+(x+%3E+0)+%7B%0A++++T+y+%3D+x+%2B+5%3B%0A++%09return+x+%3C+y%3B%0A++%7D%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:42.693409742120345,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:57.306590257879655,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 9c: Changing `min(x,y)` or `max(x,y)` to `x` or `y` if the ranges do not overlap
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'%23include+%3Calgorithm%3E%0AT+example9c(T+x)+%7B%0A++if+(x+%3E+0)+%7B%0A++++T+y+%3D+x+%2B+5%3B%0A++++return+std::min(x,+y)%3B%0A++%7D%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:42.693409742120345,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:57.306590257879655,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 9d: Changing `abs(x)` to `x` or `-x` if the range does not cross `0`
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'%23include+%3Ccstdlib%3E%0AT+example9d(T+x)+%7B%0A++if+(x+%3E+0)+%7B%0A++++return+abs(x)%3B%0A++%7D%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:42.693409742120345,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:57.306590257879655,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 9e: Changing `x/c` to `x>>log2(c)` if `x>0` and the constant `c` is a power of `2`
+
+<iframe width="750px" height="450px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'T+example9e(T+x)+%7B%0A%09T+c+%3D+8%3B%0A++++if+(x+%3E+0)+%7B%0A++++++%09return+x+/+c%3B%0A++++%7D%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:42.693409742120345,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:57.306590257879655,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+---
+
+### Example 10: Loop analysis and optimization
+
+<iframe width="750px" height="475px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(j:1,source:'T+example10(T+m)+%7B%0A++int+sum+%3D+0%3B%0A++for+(short+T+i+%3D+0%3B+i+%3C%3D+m%3B+%2B%2B+i)+%7B%0A++++sum+%2B%3D+i%3B%0A++%7D%0A++return+sum%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50.651881694859796,l:'4',m:39.97134670487106,n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%231)',t:'0')),header:(),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g71,filters:(___0:(),b:'0',commentOnly:'0',directives:'0',intel:'0',jquery:'3.2.1',length:1,prevObject:(___0:(),length:1,prevObject:(___0:(jQuery321046129056142029771:(display:'')),length:1))),options:'-O3+-DT%3Dunsigned',source:1),l:'5',n:'0',o:'x86-64+gcc+7.1+(Editor+%231,+Compiler+%232)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',m:60.02865329512894,n:'0',o:'',t:'0')),k:100,l:'3',n:'0',o:'',t:'0')),version:4"></iframe>
+
+???
+Whaaaaaattt?!?!?
+Is this some kind of crazy loop-unrolling deal?
+
+---
+
+### Notes
+
+* My knowledge of assemble gets a little hazy after 6502.
+
+* Fewer instructions does *not* mean faster code.
+
+* Some 'fine tuning' of details to make some of the results differ between `signed`/`usigned`.
+
+* Some of the examples do *not* differ because they show cases where `unsigned` ought to perform better, but doesn't.
+
+* It's highly unlikely that division is the only advantage `unsigned` has over `signed`
+
+* You are invited to go out there and find good counter-examples.
+
+---
+
+class: center
+
+# Thank You!
+
+&nbsp;
+                
+Special Thanks to Krister Walfridsson
+        
+&nbsp;
+                
+&nbsp;
+        
+&nbsp;
+                
+&nbsp;
+        
+&nbsp;
+
+```
+(signed) John McFarlane
+-----------------------
+```
+
+[www.a9.com/careers/](https://www.a9.com/careers/)
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

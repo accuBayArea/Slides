@@ -6,6 +6,10 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Arthur O'Dwyer — memory_resource (lightning talk)](slides/2017-07-26-arthur.pdf)
+    — [Palo Alto, 2017-07-26](https://www.meetup.com/ACCU-Bay-Area/events/241191591/)
+* [John McFarlane — Signed Integer Undefined Behavior (lightning talk)](slides/2017-07-26-john.html)
+    — [Palo Alto, 2017-07-26](https://www.meetup.com/ACCU-Bay-Area/events/241191591/)
 * [Jeff Johnson — Designing User Interfaces for an Aging Population](slides/2017-07-19.pdf)
     — [San Francisco, 2017-07-19](https://www.meetup.com/ACCU-Bay-Area/events/241159991/)
 * Ivan Godard — Switches: A Mill Story
