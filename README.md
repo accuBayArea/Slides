@@ -6,6 +6,14 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Michael Park — Enhanced Support for Value Semantics (std::optional)](slides/2017-08-29.pdf)
+    — [San Francisco, 2017-08-29](https://www.meetup.com/ACCU-Bay-Area/events/242068478/)
+* [Louis Brandy — Curiously Recurring Bug Patterns at Facebook](slides/2017-08-23.pdf)
+    — [Palo Alto, 2017-08-23](https://www.meetup.com/ACCU-Bay-Area/events/241820297/)
+* [Victor Zverovich — fmt, a modern formatting library for C++](slides/2017-08-09.pdf)
+    — [Mountain View, 2017-08-09](https://www.meetup.com/ACCU-Bay-Area/events/237474487/)
+* [Arthur O'Dwyer — dynamic_cast From Scratch](slides/2017-08-02.pdf)
+    — [Berkeley, 2017-08-02](https://www.meetup.com/ACCU-Bay-Area/events/239731263/)
 * [Arthur O'Dwyer — memory_resource (lightning talk)](slides/2017-07-26-arthur.pdf)
     — [Palo Alto, 2017-07-26](https://www.meetup.com/ACCU-Bay-Area/events/241191591/)
 * [John McFarlane — Signed Integer Undefined Behavior (lightning talk)](slides/2017-07-26-john.html)
