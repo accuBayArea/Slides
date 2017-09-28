@@ -6,6 +6,12 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Michael Park — MPark.Patterns: Pattern Matching in C++](slides/2017-09-20.pdf)
+    — [San Francisco, 2017-09-20](https://www.meetup.com/ACCU-Bay-Area/events/243371834/)
+* [Louis Dionne — Runtime Polymorphism: Back to the Basics](slides/2017-09-13.pdf)
+    — [Mountain View, 2017-09-13](https://www.meetup.com/ACCU-Bay-Area/events/237474495/)
+* [Arthur O'Dwyer — A Soupçon of SFINAE](slides/2017-09-06.pdf)
+    — [San Francisco, 2017-09-06](https://www.meetup.com/ACCU-Bay-Area/events/239972963/)
 * [Michael Park — Enhanced Support for Value Semantics (std::optional)](slides/2017-08-29.pdf)
     — [San Francisco, 2017-08-29](https://www.meetup.com/ACCU-Bay-Area/events/242068478/)
 * [Louis Brandy — Curiously Recurring Bug Patterns at Facebook](slides/2017-08-23.pdf)
