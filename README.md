@@ -6,6 +6,10 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Arthur O'Dwyer — Mutex From Scratch](slides/2017-10-18.pdf)
+    — [San Francisco, 2017-10-18](https://www.meetup.com/ACCU-Bay-Area/events/243872369/)
+* Lokesh Gidra — Multi-process garbage collection for non-volatile heaps in C++
+    — [Mountain View, 2017-10-11](https://www.meetup.com/ACCU-Bay-Area/events/237474501/)
 * [Michael Park — MPark.Patterns: Pattern Matching in C++](slides/2017-09-20.pdf)
     — [San Francisco, 2017-09-20](https://www.meetup.com/ACCU-Bay-Area/events/243371834/)
 * [Louis Dionne — Runtime Polymorphism: Back to the Basics](slides/2017-09-13.pdf)
