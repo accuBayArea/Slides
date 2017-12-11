@@ -6,13 +6,15 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Sumant Tambe — Systematic Generation of Data and Types in C++](slides/2017-12-13.pdf)
+    — [Mountain View, 2017-12-13](https://www.meetup.com/ACCU-Bay-Area/events/jgndwlywqbrb/)
 * [Olivier Giroux — Designing C++ Hardware](slides/2017-12-06.pdf)
     — [Santa Clara, 2017-12-06](https://www.meetup.com/ACCU-Bay-Area/events/245534930/)
 * [Chris D'Urso — bitstrm (lightning talk)](slides/2017-11-29-chris.pdf)
     — [Palo Alto, 2017-11-29](https://www.meetup.com/ACCU-Bay-Area/events/244789492/)
 * [Barbara Geller and Ansel Sermersheim — Modern C++ from the Beginning to the Middle](slides/2017-11-08.pdf)
     — [Mountain View, 2017-11-08](https://www.meetup.com/ACCU-Bay-Area/events/237474506/)
-* Dave Watson — Exceptions and Stack Unwinding
+* [Dave Watson — Exceptions and Stack Unwinding](slides/2017-11-01.pdf)
     — [San Francisco, 2017-11-01](https://www.meetup.com/ACCU-Bay-Area/events/244062218/)
 * [Arthur O'Dwyer — Mutex From Scratch](slides/2017-10-18.pdf)
     — [San Francisco, 2017-10-18](https://www.meetup.com/ACCU-Bay-Area/events/243872369/)
