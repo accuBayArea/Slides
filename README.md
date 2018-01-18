@@ -6,6 +6,16 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Oswald Campesato — Dive into Deep Learning](slides/2018-02-07.pdf)
+    — [San Francisco, 2018-02-07](https://www.meetup.com/ACCU-Bay-Area/events/246158175/)
+* [Geoffrey Viola — CMake Antipatterns (lightning talk)](slides/2018-01-24-geoffrey.pdf)
+    — [Palo Alto, 2018-01-24](https://www.meetup.com/ACCU-Bay-Area/events/246496170/)
+* [Arthur O'Dwyer — Generic Lambdas from Scratch](slides/2018-01-17.pdf)
+    — [San Francisco, 2018-01-17](https://www.meetup.com/ACCU-Bay-Area/events/246665221/)
+* [Barbara Geller and Ansel Sermersheim — Multithreading using libGuarded](slides/2018-01-10.pdf)
+    — [Mountain View, 2018-01-10](https://www.meetup.com/ACCU-Bay-Area/events/246158951/)
+* Michael Klose — What I Wish People Knew About C++
+    — [San Francisco, 2018-01-03](https://www.meetup.com/ACCU-Bay-Area/events/245867995/)
 * [Sumant Tambe — Systematic Generation of Data and Types in C++](slides/2017-12-13.pdf)
     — [Mountain View, 2017-12-13](https://www.meetup.com/ACCU-Bay-Area/events/jgndwlywqbrb/)
 * [Olivier Giroux — Designing C++ Hardware](slides/2017-12-06.pdf)
@@ -78,7 +88,7 @@ Hyperlinked titles point to PDF slide decks hosted within this git repository.
     — [Palo Alto, 2017-01-25](https://www.meetup.com/ACCU-Bay-Area/events/234365838/)
 * Bryce Adelstein Lelbach — The C++17 Parallel Algorithms
     — [Mountain View, 2017-01-11](https://www.meetup.com/ACCU-Bay-Area/events/236621722/)
-* [Arthur O'Dwyer — std::regex (lightning talk)](slides/2016-01-10.pdf)
+* [Arthur O'Dwyer — std::regex (lightning talk)](slides/2017-01-10.pdf)
     — [San Francisco, 2016-01-10](https://www.meetup.com/ACCU-Bay-Area/events/236274746/)
 * Bryce Adelstein Lelbach — std::transform_reduce (lightning talk)
     — [Mountain View, 2016-12-14](https://www.meetup.com/ACCU-Bay-Area/events/233766721/)
