@@ -6,6 +6,16 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Abel Mathew — Dealing with Application Crashes
+    — [San Francisco, 2018-03-21](https://www.meetup.com/ACCU-Bay-Area/events/248279213/)
+* Ivan Godard — Meltdown and Spectre
+    — [Mountain View, 2018-03-14](https://www.meetup.com/ACCU-Bay-Area/events/248329683/)
+* [Arthur O'Dwyer — Return Value Optimization: Harder than it Looks](slides/2018-03-07.pdf)
+    — [Palo Alto, 2018-03-07](https://www.meetup.com/ACCU-Bay-Area/events/248040207/)
+* [Barbara Geller and Ansel Sermersheim — Multithreading using libGuarded](slides/2018-02-21.pdf)
+    — [San Francisco, 2018-02-21](https://www.meetup.com/ACCU-Bay-Area/events/247068337/)
+* [Keith Bisset — Cross-Language Interprocess Communication with RabbitMQ](slides/2018-02-14.pdf)
+    — [Mountain View, 2018-02-14](https://www.meetup.com/ACCU-Bay-Area/events/jgndwlyxdbsb/)
 * [Oswald Campesato — Dive into Deep Learning](slides/2018-02-07.pdf)
     — [San Francisco, 2018-02-07](https://www.meetup.com/ACCU-Bay-Area/events/246158175/)
 * [Geoffrey Viola — CMake Antipatterns (lightning talk)](slides/2018-01-24-geoffrey.pdf)
