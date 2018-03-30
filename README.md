@@ -6,7 +6,9 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
-* Abel Mathew — Dealing with Application Crashes
+* [Anastasia Kazakova — New standards to the rescue: the view through the IDE's glasses](slides/2018-03-22.pdf)
+    — [Santa Clara, 2018-03-22](https://www.meetup.com/ACCU-Bay-Area/events/248475350/)
+* [Abel Mathew — Dealing with Application Crashes](slides/2018-03-21.pdf)
     — [San Francisco, 2018-03-21](https://www.meetup.com/ACCU-Bay-Area/events/248279213/)
 * Ivan Godard — Meltdown and Spectre
     — [Mountain View, 2018-03-14](https://www.meetup.com/ACCU-Bay-Area/events/248329683/)
