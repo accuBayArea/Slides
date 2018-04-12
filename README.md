@@ -6,6 +6,12 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Kostya Serebryany — Memory Tagging and how it improves C++ memory safety](slides/2018-04-11.pdf)
+    — [Mountain View, 2018-04-11](https://www.meetup.com/ACCU-Bay-Area/events/248779964/)
+* [Jon Kalb — Modernizing "Effective Modern C++" (lightning talk)](slides/2018-04-04-jon.pdf)
+    — [Palo Alto, 2018-04-04](https://www.meetup.com/ACCU-Bay-Area/events/249013239/)
+* [Arthur O'Dwyer — The "OO" Antipattern (lightning talk)](slides/2018-04-04-arthur.pdf)
+    — [Palo Alto, 2018-04-04](https://www.meetup.com/ACCU-Bay-Area/events/249013239/)
 * [Anastasia Kazakova — New standards to the rescue: the view through the IDE's glasses](slides/2018-03-22.pdf)
     — [Santa Clara, 2018-03-22](https://www.meetup.com/ACCU-Bay-Area/events/248475350/)
 * [Abel Mathew — Dealing with Application Crashes](slides/2018-03-21.pdf)
