@@ -6,6 +6,14 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Barbara Geller and Ansel Sermersheim — Overload Resolution](slides/2018-06-13.pdf)
+    — [Mountain View, 2018-06-13](https://www.meetup.com/ACCU-Bay-Area/events/251133836/)
+* [Arthur O'Dwyer — The Best Type Traits C++ Doesn't Have](slides/2018-06-06.pdf)
+    — [Santa Clara, 2018-06-06](https://www.meetup.com/ACCU-Bay-Area/events/251133806/)
+* John McFarlane — Better Numeric Types in C++
+    — [Mountain View, 2018-05-09](https://www.meetup.com/ACCU-Bay-Area/events/250226204/)
+* Mark Galpin — Modern DevOps Workflow for C/C++
+    — [Sunnyvale, 2018-05-02](https://www.meetup.com/ACCU-Bay-Area/events/249748333/)
 * [Kostya Serebryany — Memory Tagging and how it improves C++ memory safety](slides/2018-04-11.pdf)
     — [Mountain View, 2018-04-11](https://www.meetup.com/ACCU-Bay-Area/events/248779964/)
 * [Jon Kalb — Modernizing "Effective Modern C++" (lightning talk)](slides/2018-04-04-jon.pdf)
