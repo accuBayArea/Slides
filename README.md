@@ -6,6 +6,14 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Ben Hindman — libprocess, a concurrent and asynchronous programming library](slides/2018-08-01.pdf)
+    — [San Francisco, 2018-08-01](https://www.meetup.com/ACCU-Bay-Area/events/253140990/)
+* [Dima Korolev — Crunching Gigabytes Locally](slides/2018-07-18.pdf)
+    — [San Francisco, 2018-07-18](https://www.meetup.com/ACCU-Bay-Area/events/251924892/)
+* Richard Powell — Named Arguments From Scratch
+    — [Mountain View, 2018-07-11](https://www.meetup.com/ACCU-Bay-Area/events/251996844/)
+* Michael Spencer — How Compilers Reason About Exceptions
+    — [Sunnyvale, 2018-06-20](https://www.meetup.com/ACCU-Bay-Area/events/251133919/)
 * [Barbara Geller and Ansel Sermersheim — Overload Resolution](slides/2018-06-13.pdf)
     — [Mountain View, 2018-06-13](https://www.meetup.com/ACCU-Bay-Area/events/251133836/)
 * [Arthur O'Dwyer — The Best Type Traits C++ Doesn't Have](slides/2018-06-06.pdf)
