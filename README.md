@@ -6,6 +6,16 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Ramon Pantin — Simplicity vs. Complexity, COOGL vs. C++
+    — [San Francisco, 2018-09-12](https://www.meetup.com/ACCU-Bay-Area/events/254217713/)
+* Ramon Pantin — What Makes COOGL Safe?
+    — [San Francisco, 2018-09-05](https://www.meetup.com/ACCU-Bay-Area/events/253711523/)
+* Richard Powell — How to Argue(ment)
+    — [Sunnyvale, 2018-08-15](https://www.meetup.com/ACCU-Bay-Area/events/253497615/)
+* Ori Bernstein — Introducing Futexes
+    — [Mountain View, 2018-08-08](https://www.meetup.com/ACCU-Bay-Area/events/253012139/)
+* [Jeff Trull — Liberating the Debugging Experience with the GDB Python API](slides/2018-08-08-jeff.pdf)
+    — [Mountain View, 2018-08-08](https://www.meetup.com/ACCU-Bay-Area/events/253012139/)
 * [Ben Hindman — libprocess, a concurrent and asynchronous programming library](slides/2018-08-01.pdf)
     — [San Francisco, 2018-08-01](https://www.meetup.com/ACCU-Bay-Area/events/253140990/)
 * [Dima Korolev — Crunching Gigabytes Locally](slides/2018-07-18.pdf)
