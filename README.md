@@ -6,6 +6,14 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Conor Hoekstra — Algorithm Intuition
+    — [Santa Clara, 2019-01-09](https://www.meetup.com/ACCU-Bay-Area/events/257565124/)
+* Adenilson Cavalcanti — [Optimizing zlib on ARM: The Power of NEON](slides/2018-12-05.pdf)
+    — [San Francisco, 2018-12-05](https://www.meetup.com/ACCU-Bay-Area/events/255519473/)
+* Richard Powell — Back to Basics: The Importance of Being `const`
+    — [Mountain View, 2018-11-14](https://www.meetup.com/ACCU-Bay-Area/events/255519548/)
+* Jeff Cohen — [Lockfree Queues with C++ Atomics](slides/2018-10-17.pdf)
+    — [Sunnyvale, 2018-10-17](https://www.meetup.com/ACCU-Bay-Area/events/255519425/)
 * Ramon Pantin — Simplicity vs. Complexity, COOGL vs. C++
     — [San Francisco, 2018-09-12](https://www.meetup.com/ACCU-Bay-Area/events/254217713/)
 * Ramon Pantin — What Makes COOGL Safe?
@@ -334,3 +342,4 @@ Hyperlinked titles point to PDF slide decks hosted within this git repository.
     — [Mountain View, 2013-01-09](https://www.meetup.com/ACCU-Bay-Area/events/96780602/)
 
 **[Presenters — see our guidelines for making a good slide deck](SLIDE_DECK_GUIDELINES.md)**
+
