@@ -8,6 +8,8 @@ Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
 * Conor Hoekstra — Algorithm Intuition
     — [Santa Clara, 2019-01-09](https://www.meetup.com/ACCU-Bay-Area/events/257565124/)
+* Jeff Cohen — [Dynamic Code Generation with LLVM](slides/2018-12-12.pdf)
+    — [Sunnyvale, 2018-12-12](https://www.meetup.com/ACCU-Bay-Area/events/257050258/)
 * Adenilson Cavalcanti — [Optimizing zlib on ARM: The Power of NEON](slides/2018-12-05.pdf)
     — [San Francisco, 2018-12-05](https://www.meetup.com/ACCU-Bay-Area/events/255519473/)
 * Richard Powell — Back to Basics: The Importance of Being `const`
