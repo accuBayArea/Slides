@@ -6,6 +6,8 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* [Barbara Geller and Ansel Sermersheim - Undefined Behavior Is Not An Error](slides/2019-02-13.pdf)
+    - [Santa Clara, 2019-02-13](https://www.meetup.com/ACCU-Bay-Area/events/257575070/)
 * Conor Hoekstra — Algorithm Intuition
     — [Santa Clara, 2019-01-09](https://www.meetup.com/ACCU-Bay-Area/events/257565124/)
 * Jeff Cohen — [Dynamic Code Generation with LLVM](slides/2018-12-12.pdf)
