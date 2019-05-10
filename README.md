@@ -6,6 +6,8 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Jeff Cohen — [Understanding Monads via C++](slides/2019-05-08.pdf)
+    — [Sunnyvale, 2019-05-08](https://www.meetup.com/ACCU-Bay-Area/events/261066982/)
 * Barbara Geller and Ansel Sermersheim — [Undefined Behavior Is Not An Error](slides/2019-02-13.pdf)
     — [Santa Clara, 2019-02-13](https://www.meetup.com/ACCU-Bay-Area/events/257575070/)
 * Conor Hoekstra — Algorithm Intuition
