@@ -6,6 +6,8 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Barbara Geller and Ansel Sermersheim — [Moving to C++17, Tricky Bits, Insightful Interview Questions](slides/2020-01-22.pdf)
+    — [Sunnyvale, 2020-01-22](https://www.meetup.com/ACCU-Bay-Area/events/267819623/)
 * Jeff Cohen — [Understanding Monads via C++](slides/2019-05-08.pdf)
     — [Sunnyvale, 2019-05-08](https://www.meetup.com/ACCU-Bay-Area/events/261066982/)
 * Barbara Geller and Ansel Sermersheim — [Undefined Behavior Is Not An Error](slides/2019-02-13.pdf)
