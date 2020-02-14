@@ -6,6 +6,8 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Jeff Cohen — [SFINAE: Failure is an Option](slides/2020-02-12.pdf)
+    — [Sunnyvale, 2020-02-12](https://www.meetup.com/ACCU-Bay-Area/events/268276345/)
 * Barbara Geller and Ansel Sermersheim — [Moving to C++17, Tricky Bits, Insightful Interview Questions](slides/2020-01-22.pdf)
     — [Sunnyvale, 2020-01-22](https://www.meetup.com/ACCU-Bay-Area/events/267819623/)
 * Jeff Cohen — [Understanding Monads via C++](slides/2019-05-08.pdf)
