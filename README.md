@@ -6,6 +6,8 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Bryce Adelstein Lelbach - [The CUDA C++ Standard Library](slides/2020-04-29.pdf)
+    — [Virtual, 2020-04-29](https://www.meetup.com/ACCU-Bay-Area/events/269904471/)
 * Jeff Cohen — [SFINAE: Failure is an Option](slides/2020-02-12.pdf)
     — [Sunnyvale, 2020-02-12](https://www.meetup.com/ACCU-Bay-Area/events/268276345/)
 * Barbara Geller and Ansel Sermersheim — [Moving to C++17, Tricky Bits, Insightful Interview Questions](slides/2020-01-22.pdf)
