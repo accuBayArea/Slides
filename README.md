@@ -6,6 +6,8 @@ from our informal "workshop and discussion group" sessions.
 
 Hyperlinked titles point to PDF slide decks hosted within this git repository.
 
+* Barbara Geller and Ansel Sermersheim — [Lambda Expressions & Concepts (C++17 and C++20)](slides/2020-12-09.pdf)
+    — [Virtual, 2020-12-09](https://www.meetup.com/ACCU-Bay-Area/events/274581118/)
 * Bryce Adelstein Lelbach - [The CUDA C++ Standard Library](slides/2020-04-29.pdf)
     — [Virtual, 2020-04-29](https://www.meetup.com/ACCU-Bay-Area/events/269904471/)
 * Jeff Cohen — [SFINAE: Failure is an Option](slides/2020-02-12.pdf)
